@@ -1,14 +1,16 @@
 {
-  "name": "ide-beyondql",
+  "name": "package-ci-test",
   "main": "./lib/main",
-  "version": "0.0.0",
-  "description": "BeyondQL language support for Atom-IDE.",
-  "repository": "https://github.com/dojt/atom-ui-beyondQL",
-  "license": "AGPL-3.0 ",
+  "version": "0.0.1",
+  "description": "Testing how to use ci with atom",
+  "repository": "https://github.com/karljaats/atom-package-CI-test",
+  "license": "AGPL-3.0",
   "scripts": {
     "test": "atom --test test"
   },
-  "engines": {"atom": ">=1.0.0 <2.0.0"},
+  "engines": {
+    "atom": ">=1.21.0"
+  },
   "configSchema": {
     "javaHome": {
       "order": 10,
