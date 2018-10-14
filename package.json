@@ -6,7 +6,8 @@
   "repository": "https://github.com/karljaats/atom-package-CI-test",
   "license": "AGPL-3.0",
   "scripts": {
-    "test": "atom --test test"
+    "test": "atom --test test",
+    "semantic-release": "semantic-release"
   },
   "engines": {
     "atom": ">=1.21.0"
