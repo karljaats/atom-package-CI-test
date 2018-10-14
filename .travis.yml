@@ -31,6 +31,5 @@ after_success:
 jobs:
   include:
     - stage: release
-      node_js: lts/*
       script:
-        - npm run semantic-release
+        - apm publish patch
