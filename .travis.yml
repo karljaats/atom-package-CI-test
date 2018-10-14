@@ -5,9 +5,7 @@ notifications:
     on_success: never
     on_failure: change
 
-node_js:
-  - 10
-  - 8
+node_js: "8"
 
 services:
   - docker
@@ -44,7 +42,7 @@ after_success:
 jobs:
   include:
     - stage: release
-      node_js: node
+      #node_js: node
       script:
         - npm run semantic-release
 
