@@ -13,9 +13,3 @@ git:
 branches:
   only:
     - master
-
-jobs:
-  include:
-    - stage: release
-      script:
-        - npm run semantic-release
