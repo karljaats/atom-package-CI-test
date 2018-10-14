@@ -11,6 +11,9 @@
   "engines": {
     "atom": ">=1.21.0"
   },
+  "release": {
+    "extends": "@semantic-release/apm-config"
+  },
   "configSchema": {
     "javaHome": {
       "order": 10,
@@ -56,12 +59,14 @@
     "decompress": "^4.2.0"
   },
   "devDependencies": {
+    "@semantic-release/apm-config": "^5.0.2",
     "atom-mocha-test-runner": "^1.0.1",
     "chai": "^3.5.0",
     "chai-as-promised": "^5.3.0",
     "mocha": "^3.4.2",
     "mocha-appveyor-reporter": "^0.4.0",
-    "mocha-junit-and-console-reporter": "^1.6.0"
+    "mocha-junit-and-console-reporter": "^1.6.0",
+    "semantic-release": "^15.9.17"
   },
   "enhancedScopes": [
     "source.java"
