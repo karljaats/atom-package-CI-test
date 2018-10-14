@@ -10,8 +10,7 @@
     "semantic-release": "semantic-release"
   },
   "engines": {
-    "atom": ">=1.21.0",
-    "npm": ">=8.3"
+    "atom": ">=1.21.0"
   },
   "release": {
     "extends": "@semantic-release/apm-config"
