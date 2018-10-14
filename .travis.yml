@@ -5,7 +5,9 @@ notifications:
     on_success: never
     on_failure: change
 
-node_js: "8"
+node_js:
+  - 10
+  - 8
 
 services:
   - docker
@@ -25,7 +27,7 @@ branches:
 
 install:
   # Retry install on fail to avoid failing a build on network/disk/external errors
-  - travis_retry npm install
+  - travis_retry npm install -g npm@latest
   # See https://github.com/atom/ci
   - curl -s -O https://raw.githubusercontent.com/atom/ci/master/build-package.sh
   - chmod u+x build-package.sh
@@ -42,7 +44,7 @@ after_success:
 jobs:
   include:
     - stage: release
-      #node_js: node
+      node_js: lts/*
       script:
         - npm run semantic-release
 
