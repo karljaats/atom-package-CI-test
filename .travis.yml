@@ -12,24 +12,7 @@ branches:
   only:
     - master
 
-install:
-  # Retry install on fail to avoid failing a build on network/disk/external errors
-  - travis_retry npm install
+script:
   # See https://github.com/atom/ci
   - curl -s -O https://raw.githubusercontent.com/atom/ci/master/build-package.sh
-  - chmod u+x build-package.sh
-  - ./build-package.sh
-  # Add apm to the PATH
-  #- export PATH=$PATH:~/atom/usr/bin
-
-script:
-  - npm run test
-
-after_success:
-  - npm run codecov
-
-jobs:
-  include:
-    - stage: release
-      script:
-        - apm publish patch
+  - apm publish patch
