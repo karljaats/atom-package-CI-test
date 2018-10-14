@@ -13,3 +13,6 @@ git:
 branches:
   only:
     - master
+
+deploy:
+  - apm publish patch
