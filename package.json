@@ -1,7 +1,7 @@
 {
   "name": "package-ci-test",
   "main": "./lib/main",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Testing how to use ci with atom",
   "repository": "https://github.com/karljaats/atom-package-CI-test",
   "license": "AGPL-3.0",
